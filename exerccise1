@@ -1,0 +1,25 @@
+db.students.insertOne({
+    name: "Amiira",
+    age: 22,
+    email: "amira22@.gmail.com",
+    course: "IT"
+})
+
+db.students.insertOne({
+    name: "maxamed",
+    age: 22,
+    email: "xamuudi22@.gmail.com",
+    course: "Business"
+})
+db.students.insertOne({
+    name: "Amiira",
+    age: 22,
+    email: "amira22@.gmail.com",
+    course: "Engineering"
+})
+
+db.students.find()
+db.students.updateOne({name: "Amiira"}, {$set: {email: "suu@.gmail.com"}})
+db.students.deleteOne({name: "maxamed"})
+
+
