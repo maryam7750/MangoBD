@@ -23,3 +23,6 @@ db.students.updateOne({name: "Amiira"}, {$set: {email: "suu@.gmail.com"}})
 db.students.deleteOne({name: "maxamed"})
 
 
+db.students.updateOne({name:maxamed},{$set:{age: 22}}) 
+
+
