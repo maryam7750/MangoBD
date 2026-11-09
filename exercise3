@@ -1,0 +1,25 @@
+db.reg.insertOne({
+    name:"amiira",
+    email:"miira22@gmail.com",
+    points:100,
+    course:["IT","Business","Engineering"]
+
+   
+})
+db.reg.updateOne({name:"amiira"},
+    {$set:{email:"miira22@yahoo.com"}})
+
+ db.reg.updateOne({name:"amiira"},
+    {$inc:{points:50}})   
+
+db.reg.updateOne({name:"amiira"},
+    {$push:{course:"React"}})
+     
+db.reg.updateOne({name:"amiira"},
+    {$pull:{course:"Business"}})
+    
+    db.reg.updateOne({name:"amiira"},
+        {},{$set:{email:"miira22@hotmail.com"}},
+            {inc: {points: 10}},
+            {$push: {course: "Node.js"}})
+
