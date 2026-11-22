@@ -1,0 +1,15 @@
+db.students.insertMany([
+  { name: "Ali", course: "Python", score: 90 },
+  { name: "Amina", course: "Python", score: 88 },
+  { name: "Hassan", course: "Python", score: 75 },
+  { name: "Sara", course: "PHP", score: 95 },
+  { name: "Omar", course: "PHP", score: 82 },
+  { name: "Maryam", course: "PHP", score: 91 },
+  { name: "Ahmed", course: "Java", score: 89 },
+  { name: "Hodan", course: "Java", score: 70 }
+])
+[
+  { _id: "Python", totalStudents: 2 },
+  { _id: "PHP", totalStudents: 2 },
+  { _id: "Java", totalStudents: 1 }
+]

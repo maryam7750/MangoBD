@@ -22,4 +22,4 @@ db.reg.updateOne({name:"amiira"},
         {},{$set:{email:"miira22@hotmail.com"}},
             {inc: {points: 10}},
             {$push: {course: "Node.js"}})
-
+         
